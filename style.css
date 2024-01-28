@@ -1,0 +1,376 @@
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: .2s linear;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 70%
+}
+
+section {
+    padding: 2rem 5%;
+}
+
+
+/* Header */
+
+header {
+    padding: 2rem 5%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .container .logo {
+    width: 8rem;
+}
+
+header .container img {
+    width: 100%;
+}
+
+header .container .btnh {
+    background-color: #fff;
+    padding: 0.25rem;
+    color: var(--Very-Dark-Cyan);
+    border: 0.5rem solid #fff;
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+    width: 8rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+header .container .btnh:hover {
+    transform: scale(1.05);
+}
+
+/* Landing */
+
+.landing {
+    position: relative;
+    background-color: var(--Very-Pale-Cyan);
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 60vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.landing-content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+    width: 100%;
+}
+
+.landing-content .text {
+    width: 40%;
+}
+
+.landing-content .text h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--Very-Dark-Cyan);
+}
+
+.landing-content .text p {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: #333;
+
+}
+
+.landing-content .text .btnl {
+    display: block;
+    background-color: var(--Pink);
+    padding: 0.5rem;
+    color: #fff;
+    border: 0.25rem solid var(--Pink);
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+    width: 13rem;
+    text-align: center;
+    font-weight: bolder;
+    margin: 1.25rem 0
+}
+
+.landing-content .text .btnl:hover {
+    transform: scale(1.05);
+}
+
+.landing-content .imgl {
+    width: 40%;
+}
+
+.landing-content .imgl img {
+    width: 100%;
+}
+
+/* About */
+
+.about .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+    border: 1rem solid #fff;
+    width: 100%;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 5rem 0;
+    margin: 1.5rem 0;
+}
+
+.about .card:hover {
+    transform: scale(1.03);
+}
+
+.about .card .left {
+    max-width: 30rem;
+    padding: 2rem;
+}
+
+.about .card .info {
+    max-width: 25rem;
+}
+
+.about .card .info h3 {
+    font-size: 1.5rem;
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 1rem;
+}
+
+.about .card .info p {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--Grayish-Blue);
+}
+
+.about .card .about-img {
+    width: 20rem;
+}
+
+.about .card img {
+    width: 100%;
+}
+
+/* Download */
+.download .card {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+    border: 1rem solid #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    position: relative;
+    bottom: -7rem;
+    background: #fff;
+}
+
+.download .card h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--Very-Dark-Cyan);
+}
+
+.download .card .btnd {
+    display: block;
+    background-color: var(--Pink);
+    padding: 1rem;
+    color: #fff;
+    border: 0.25rem solid var(--Pink);
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+    width: 13rem;
+    font-weight: bolder;
+    margin: 1.25rem auto;
+}
+
+.download .card .btnd:hover {
+    transform: scale(1.03);
+}
+/* footer */
+footer {
+    background: var(--Very-Dark-Cyan);
+    padding: 3rem 7%;
+    padding-top: 10rem;
+    color: #ffffffd9;
+    font-size: 0.65rem;
+
+}
+
+footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    gap: 4rem;
+}
+
+footer .logo{
+    width: 7rem;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%) hue-rotate(105deg) brightness(103%) contrast(101%);
+}
+
+footer .logo img {
+    width: 100%;
+}
+
+footer .footer-content .info {
+    max-width: 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .footer-content .info .info-content {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .footer-content .ul {
+    display: flex;
+    gap: 4rem;
+}
+
+footer .footer-content .ul a {
+    display: block;
+    color: #ffffffd9;
+    margin-bottom: 1rem ;
+}
+
+footer .footer-content .icons {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+footer .footer-content .icons a i {
+    padding: .25rem;
+    border-radius: 50%;
+    border: 0.01rem solid #ffffffd9;
+    color: #fff;
+    font-size: 0.5rem;
+}
+
+footer .footer-content a:hover,
+footer .footer-content .icons a i:hover {
+    color: hsl(322deg 100% 66% / 80%);
+}
+
+footer .copy {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .landing-content {
+        text-align: center;
+        justify-content: center;
+        padding-top: 6rem;
+        }
+    .landing-content .text .btnl {
+        margin: 1.25rem auto;
+    }
+
+    .about .card {
+        flex-wrap: wrap;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .download .card {
+        width: 100%;
+    }
+
+    .landing-content .text {
+        width: auto;
+    }
+    
+    footer {
+        padding-top: 8rem;
+        font-size: 1rem;
+    }
+
+    footer .footer-content {
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    footer .footer-content .ul {
+        gap: 0rem;
+        flex-direction: column;
+    }
+    footer .footer-content {
+        margin: 2rem 0;
+    }
+
+    footer .footer-content .icons{
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    footer .footer-content .icons a i {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    footer .copy {
+        justify-content: center;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header .container .logo {
+        width: 4rem;
+    }
+
+    .landing-content .imgl {
+        width: 15rem;
+    }
+
+}
