@@ -1,5 +1,5 @@
 # Frontend Mentor - Huddle landing page with alternating feature blocks
-https://safiaaskar.github.io/huddle-landing-page-with-alternating-feature-blocks/
+https://huddle-landing-page-master-1.netlify.app/
 
 ![Design preview for the Huddle landing page with alternating feature blocks coding challenge](./design/desktop-preview.jpg)
 
